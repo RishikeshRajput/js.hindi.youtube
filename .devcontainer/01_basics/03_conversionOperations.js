@@ -1,3 +1,4 @@
+/*
 let score = "33"
 console.log(typeof score)
 console.log(typeof (score))
@@ -48,3 +49,44 @@ let stringNum = String(someNumber)
 
 console.log(stringNum)
 console.log(typeof stringNum)
+
+*/
+
+
+// ***************************Operations****************************
+
+let value = 3
+let negvalue = -value
+//console.log(negvalue)
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2%2)
+// console.log(2**2)
+
+let str1 = "rishi"
+let str2 = " nidhi"
+//console.log(str1+str2)
+
+// console.log("1"+2) // gives output 12
+// console.log(1 + "2")// gives output 12
+// console.log("1"+ 2+ 2)// gives output 122
+// console.log(1 + 2 + "2")// gives outpput 32
+// // reason behind this is if string is at first everthing is treated as string otherwise normal conversion will happen first
+
+// console.log(+ true)// return 1
+// console.log(true +)//this will give error
+// console.log(+"")// return 0
+
+let gameCounter = 100
+++gameCounter
+console.log(gameCounter)// prefix output 101
+gameCounter++
+console.log(gameCounter)// postfix output same 101
+
+// readd about it @ prfix and postfix js mdn
+// and can go through it at ECMA documentation
+
+
+
