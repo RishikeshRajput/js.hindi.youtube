@@ -1,1 +1,1 @@
-console.log("rishiS")
+console.log("rishiS") // console is a print statement // 
