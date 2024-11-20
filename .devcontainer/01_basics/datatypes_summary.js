@@ -76,12 +76,8 @@ console.log("hello world")
     Note: All non primitive datatypes will return "Function" , when typeof and functions datatype will be
           "objectFunction"
 
-
-
-
-
-
-
-
-
 */
+
+/* ********************** Memory in js ************************
+# Two types of memory in js: Stack & Heap
+   Stack is used for primitive datatype and heap is used for non-primitive datatype
