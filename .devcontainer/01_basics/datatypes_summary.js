@@ -81,3 +81,45 @@ console.log("hello world")
 /* ********************** Memory in js ************************
 # Two types of memory in js: Stack & Heap
    Stack is used for primitive datatype and heap is used for non-primitive datatype
+
+   Stack when used gives the copy of the obj or var
+   Heap when used gives the original reference of the obj or var
+    
+*/
+/*
+eg. for stack
+
+let myyoutubeName = "Rishi Rajput"
+let anotherName = myyoutubeName
+
+console.log(anotherName);
+console.log(myyoutubeName)
+//op : Rishi Rajput
+//     Rishi Rajput
+anotherName = "pankaj mahajan"
+
+console.log(anotherName); //  pankaj mahajan
+console.log(myyoutubeName) // Rishi Rajput 
+*/
+
+//eg. for heap 
+
+// let userOne ={
+// email : "user@gmail.com",
+// upi : "user@ybl"
+// }
+
+// userTwo = userOne
+// userTwo.email = "rishi@gmail.com"
+
+// console.log(userOne.email); // op: rishi@gmail.com
+// console.log(userTwo.email); // op: rishi@gmail.com
+
+// // note: it changes both of them  or we can say changes will be done in original value
+//          because in heap it takes the reference of original obj. 
+
+
+
+
+
+
