@@ -91,18 +91,53 @@ const users = [
 // to perform operation on objects we convert them into key or val and store them in an array, 
 // so we can iterate through them...eg
 
-console.log(tinderUser1); //op : { id: '123abc', name: 'sammy', isloggedIn: false }
+// console.log(tinderUser1); //op : { id: '123abc', name: 'sammy', isloggedIn: false }
 
-console.log(Object.keys(tinderUser1)); // op: [ 'id', 'name', 'isloggedIn' ]
-console.log(Object.values(tinderUser1)); // op: [ '123abc', 'sammy', false ]
+// console.log(Object.keys(tinderUser1)); // op: [ 'id', 'name', 'isloggedIn' ]
+// console.log(Object.values(tinderUser1)); // op: [ '123abc', 'sammy', false ]
 
 // we use "entries" to convert key val in an array, gives us an array inside an array
-console.log(Object.entries(tinderUser1)); // op: [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isloggedIn', false ] ]
+// console.log(Object.entries(tinderUser1)); // op: [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isloggedIn', false ] ]
 
 // to check if the property is present in the obj or not
-console.log(tinderUser1.hasOwnProperty('isloggedIn')); // op : true
-console.log(tinderUser1.hasOwnProperty('islogged')); // op: false
+// console.log(tinderUser1.hasOwnProperty('isloggedIn')); // op : true
+// console.log(tinderUser1.hasOwnProperty('islogged')); // op: false
 
 
+//***************** Destructuring ***************************
+// Destructuring is done in both "objects" as well as "arrays"
+
+// syntax : const {objectVariableName : allias} = object_name
+// Object destructuring eg. :
+
+const course = {
+    courseName : "js in hindi",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+// course.courseInstructor // tradional way
+
+// destructured way : 
+const {courseInstructor} = course
+//console.log(courseInstructor); // op : Hitesh
+
+// destructured with allias
+const {courseInstructor : instructor} = course
+//console.log(instructor); // op : Hitesh
 
 
+// "JSON" brief.......
+// basic format of json object
+// {
+//     "name" : "rishi",
+//     "age" : "27",
+//     "sex" : "male"
+// }
+
+// basic format of json array
+// [
+//     {},
+//     {},
+//     {}
+// ]
