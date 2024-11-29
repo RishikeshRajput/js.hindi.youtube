@@ -86,3 +86,19 @@ function loginUserMessage(userName = "unknown user"){
 // console.log(loginUserMessage()); // op: unknown user just loggedIn, gives val of parameter becoz we didn't gave any value in the argument
 // console.log(loginUserMessage("Terminator")); // op: Terminator just loggedIn, will override the value of parameter
 
+// ****************** Rest Operator(...) ************************************
+// Rest operator and Spread operator are same , represented as (...) three dots,
+// only difference is their use case.
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(60)); //op: 60
+// console.log(calculateCartPrice(200,390,436)); //op: 200, it will give first value and avoid others to avoid this we use "rest" operator.
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200,390,436));  // op: [ 200, 390, 436 ]
