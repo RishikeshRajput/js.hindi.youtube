@@ -97,8 +97,40 @@ function loginUserMessage(userName = "unknown user"){
 // console.log(calculateCartPrice(60)); //op: 60
 // console.log(calculateCartPrice(200,390,436)); //op: 200, it will give first value and avoid others to avoid this we use "rest" operator.
 
-function calculateCartPrice(...num1){
-    return num1
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200,390,436));  // op: [ 200, 390, 436 ]
+
+
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200,390,436,342,566,3456)); // op: [ 436, 342, 566, 3456 ], 200 went in val1, 390 went in val2 rest in an array
+
+
+// handling an object in function :
+
+const user = {
+    userName : "rishi",
+    id : 2608
 }
 
-console.log(calculateCartPrice(200,390,436));  // op: [ 200, 390, 436 ]
+function handleObject(anyObject){
+    console.log(`User login ${anyObject.userName}, who's id is ${anyObject.id}`);
+    
+}
+
+// handleObject(user) //op: User loginrishi, who's id is 2608
+
+// directly we can create obj in a previously created function
+
+// handleObject({
+//     userName : "arpita",
+//     id : 1806
+// })
+
+
