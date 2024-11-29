@@ -68,5 +68,21 @@ function loginUserMessage(userName){
     return `${userName} just loggedIn`
 }     
 
-console.log(loginUserMessage()); // please enter userName
+//console.log(loginUserMessage()); // please enter userName
                                 //  undefined
+
+// to avoid cases of undefined values we will give some value in the parameters so that it won't enter the loop
+// and gives you some value, but if you give a value than it will overwrite the value given inside parameters..
+// eg....
+
+function loginUserMessage(userName = "unknown user"){
+    if(!userName){
+        console.log("please enter userName");
+        return
+    }
+    return `${userName} just loggedIn`
+}     
+
+// console.log(loginUserMessage()); // op: unknown user just loggedIn, gives val of parameter becoz we didn't gave any value in the argument
+// console.log(loginUserMessage("Terminator")); // op: Terminator just loggedIn, will override the value of parameter
+
