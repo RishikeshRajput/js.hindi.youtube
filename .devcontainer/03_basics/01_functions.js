@@ -134,3 +134,13 @@ function handleObject(anyObject){
 // })
 
 
+const myNewArray = [100, 200, 300, 400, 500]
+
+function returnSeconndValue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnSeconndValue(myNewArray)); // op: 200, secpnd value returned 
+//console.log(returnSeconndValue([600, 700, 800, 900, 1000])); //op: 700, second method of calling array
+
+
