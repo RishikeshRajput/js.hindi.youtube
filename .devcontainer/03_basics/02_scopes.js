@@ -30,17 +30,41 @@ if(true){
 
 // note: child fun can use parent variable , but parent fun can't use child variale
 
-if(true){
-    const userName = "Rishi"
-    if(userName === "Rishi"){
-        const website = "Youtube"
-        console.log(userName + website);// op : RishiYoutube
+// if(true){
+//     const userName = "Rishi"
+//     if(userName === "Rishi"){
+//         const website = "Youtube"
+//         console.log(userName + website);// op : RishiYoutube
         
-    }
-    //console.log(website); // err : ReferenceError: website is not defined
+//     }
+//     //console.log(website); // err : ReferenceError: website is not defined
     
-}
+// }
 
 //console.log(userName); // error : ReferenceError: userName is not defined
 
+
+// ################# interesting topic ############
+
+// Normal function:-
+
+console.log(addOne(5));// op : 6, executed although it is called before initialization or declaration
+ 
+function addOne(num){
+    return num + 1
+}
+
+addOne(5)// executed but wont be printed
+
+// Expression also a way of declaring a function :-
+
+console.log(addTwo(5));// err: ReferenceError: Cannot access 'addTwo' before initialization or declaration
+
+const addTwo = function (num) {
+    return num + 2
+}
+
+addTwo(5)// executed but wont be printed
+
+// note : function can be called before initialization or declaration but the expressions cannot be called before initialization or declaration.
 
