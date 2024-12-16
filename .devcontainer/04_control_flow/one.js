@@ -30,3 +30,14 @@ const temperature = 41
 // }
 
 // console.log("executed");
+
+const score = 200
+
+// if (score > 100){
+//     let power = "fly"
+//     console.log(`User power : ${power}`);  
+// } // op: User power : fly
+
+// console.log(`User power : ${power}`); // op: ReferenceError: power is not defined, becoz it is out of 
+//scope
+
