@@ -5,3 +5,8 @@ const myTotal = myNums.reduce( function (acc, currval) {
     return acc + currval
 }, 0 )
 console.log(myTotal);
+// op:
+// acc : 0 and currval : 1
+// acc : 1 and currval : 2
+// acc : 3 and currval : 3
+// 6
